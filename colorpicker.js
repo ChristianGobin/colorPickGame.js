@@ -13,6 +13,7 @@ for (var i = 0; i < squares.length; i++) {
     if (clickedColor === pickedColor) {
       messageDisplay.textContent = "Correct";
       changeColors(clickedColor);
+      resetButton.textContent = "Play Again?";
     } else {
       this.style.backgroundColor = "#232323";
       messageDisplay.textContent = "Try Again";
@@ -47,8 +48,9 @@ function randomColor() {
 
 resetButton.addEventListener("click", function() {
   colors = generateRandomColors(6);
-  pickedColor = pickedColor();
+  pickedColor = pickColor();
   colorDisplay.textContent = pickedColor;
+  this.textContent = "New Colors";
   for (var i = 0; i < squares.length; i++) {
     squares[i].style.backgroundColor = colors[i];
   }
