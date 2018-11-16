@@ -3,11 +3,15 @@ var pickedColor = pickColor();
 var squares = document.querySelectorAll(".square");
 var colorDisplay = document.getElementById("colorDisplay");
 var messageDisplay = document.getElementById("message");
+
+//Reset button broken when used on easy mode.
 var resetButton = document.getElementById("reset");
+
 var hardButton = document.getElementById("hardmode");
 var easyButton = document.getElementById("easymode");
 var heading = document.querySelector("h1");
 var numSquares = null;
+
 hardButton.addEventListener("click", function() {
   this.className = "selected";
   easyButton.classList.remove("selected");
