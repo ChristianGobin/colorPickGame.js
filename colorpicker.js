@@ -4,10 +4,7 @@ var pickedColor = pickColor();
 var squares = document.querySelectorAll(".square");
 var colorDisplay = document.getElementById("colorDisplay");
 var messageDisplay = document.getElementById("message");
-
-//Reset button broken when used on easy mode.
 var resetButton = document.getElementById("reset");
-
 var hardButton = document.getElementById("hardmode");
 var easyButton = document.getElementById("easymode");
 var heading = document.querySelector("h1");
@@ -48,6 +45,7 @@ resetButton.addEventListener("click", function() {
   pickedColor = pickColor();
   colorDisplay.textContent = pickedColor;
   this.textContent = "New Colors";
+  messageDisplay.textContent = "";
   heading.style.backgroundColor = generateRandomColors(1);
   for (var i = 0; i < squares.length; i++) {
     squares[i].style.backgroundColor = colors[i];
