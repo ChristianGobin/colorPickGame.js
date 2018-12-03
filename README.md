@@ -1,2 +1,2 @@
-#RGB Color Picking Game
-This game is a basic use case for DOM manipulation without Jquery
+#RGB Color Picking Tool
+This game is a use case for DOM manipulation without Jquery
