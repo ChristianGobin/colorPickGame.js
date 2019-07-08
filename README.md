@@ -1,2 +1,10 @@
-# RGB Color Memorization Tool
-This is a tool which helps with the memorization and familiarity with RGB colors. This was written in Vanilla JavaScript without Jquery to demonstrate a firm grasp of DOM Manipulation. 
+# RGB Color Game
+
+<p> What I Learned
+  <ul>
+    <li>DOM Manipulation without JQuery</li>
+    <li>Event Handling</li>
+    <li>Control Flow</li>
+    <li>Integration of Design and Page Behavior</li>
+  </ul>
+</p>
